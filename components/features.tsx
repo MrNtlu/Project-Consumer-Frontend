@@ -38,7 +38,7 @@ const Features = () => {
                     </div>
                     <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Watch & Play Later</h2>
-                    <p className="leading-relaxed text-base">Mark it and don't forget it ever again. Whether you're saving content to enjoy later or creating a list for a binge-watching session, our app makes it simple and convenient.</p>
+                    <p className="leading-relaxed text-base">Mark it and don&apos;t forget it ever again. Whether you&apos;re saving content to enjoy later or creating a list for a binge-watching session, our app makes it simple and convenient.</p>
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
@@ -47,7 +47,7 @@ const Features = () => {
                     </div>
                     <div className="flex-grow">
                     <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Discover & Search</h2>
-                    <p className="leading-relaxed text-base">Discover and search new content. With powerful search features and filters, you can quickly find exactly what you're looking for. </p>
+                    <p className="leading-relaxed text-base">Discover and search new content. With powerful search features and filters, you can quickly find exactly what you&apos;re looking for. </p>
                     </div>
                 </div>
             </div>

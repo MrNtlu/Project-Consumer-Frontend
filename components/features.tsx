@@ -8,12 +8,12 @@ import { MdMovieFilter } from 'react-icons/md'
 
 const Features = () => {
   return (
-    <section className="text-gray-600 body-font h-full w-full">
+    <section id="features" className="text-gray-600 body-font h-full w-full">
         <div className="container px-5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg">
                 <img className="object-contain mx-auto h-full w-3/4" src="/static/images/framed.png" alt='logo' />
             </div>
-            <div className="flex flex-col flex-wrap lg:w-1/2 lg:pl-12 lg:text-left text-center my-auto">
+            <div className="flex flex-col flex-wrap lg:w-1/2 lg:pl-12 pt-6 lg:text-left text-center my-auto">
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
                     <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
                         <MdMovieFilter size={24} />

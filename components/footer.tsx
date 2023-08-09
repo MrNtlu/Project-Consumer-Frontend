@@ -5,8 +5,8 @@ import { MdPrivacyTip } from 'react-icons/md'
 
 const Footer = () => {
   return (
-  <footer className="text-gray-600 body-font">
-    <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+  <footer className="text-gray-600 body-font mt-3">
+    <div className="container px-3 py-3 mx-auto flex items-center sm:flex-row flex-col">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             <Image className='rounded-full' src="/static/images/logo_black.png" alt='logo' width="100" height="100" />
         </a>

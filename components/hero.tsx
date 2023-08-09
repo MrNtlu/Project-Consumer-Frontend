@@ -3,7 +3,7 @@ import { BsGooglePlay, BsApple } from 'react-icons/bs'
 
 const Hero = () => {
   return (
-    <section className="text-gray-600 body-font h-screen w-full">
+    <section id="home" className="text-gray-600 body-font h-screen w-full">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center h-full">
             <div className="h-full w-full">
                 <img className="object-contain mx-auto h-full w-3/4" alt="hero" src="/static/images/combination_low.png" />

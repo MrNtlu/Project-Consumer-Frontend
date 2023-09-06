@@ -14,7 +14,7 @@ const Footer = () => {
             <a href="https://twitter.com/BurakFNtlu" className="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@MrNtlu</a>
         </p>
         <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a href="#soon" className="text-gray-500">
+        <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer" className="text-gray-500">
             <BsGooglePlay />
         </a>
         <a href='https://twitter.com/watchlistfy' className="ml-3 text-gray-500">

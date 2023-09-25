@@ -3,7 +3,6 @@ import { BsStars } from 'react-icons/bs'
 import { FaSearch, FaRobot } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdMovieFilter } from 'react-icons/md'
-import Image from 'next/image'
 
 const Features = () => {
   return (
@@ -27,8 +26,8 @@ const Features = () => {
                         <FaRobot size={24} />
                     </div>
                     <div className="flex-grow">
-                        <div className='flex'><h2 className="text-gray-900 text-lg title-font font-medium mb-3">AI Suggestions</h2> &nbsp; <BsStars size={24} color={'#FFEB3B'}/> </div>
-                    <p className="leading-relaxed text-base">AI will analyze the content on your list, taking into account the scores you've given, and suggest you new content accurately!</p>
+                        <div className="flex"><h2 className="text-gray-900 text-lg title-font font-medium mb-3">AI Suggestions</h2>  <BsStars size={24} color={"#FFEB3B"}/> </div>
+                    <p className="leading-relaxed text-base">AI will analyze the content on your list, taking into account the scores you&apos;ve given, and suggest you new content accurately!</p>
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">

@@ -1,8 +1,7 @@
 import React from 'react'
-import { BsFillBookmarkFill } from 'react-icons/bs'
-import { FaSearch } from 'react-icons/fa'
+import { BsStars } from 'react-icons/bs'
+import { FaSearch, FaRobot } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
-import Image from 'next/image'
 import { MdMovieFilter } from 'react-icons/md'
 
 
@@ -25,20 +24,20 @@ const Features = () => {
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
                     <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
-                        <AiFillStar size={24} />
+                        <FaRobot size={24} />
                     </div>
                     <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">User List</h2>
-                    <p className="leading-relaxed text-base">Add content to your list and mark them as Active, Finished or Dropped. Give them a score as you like. Enter your progess and never forget which episode you were at!</p>
+                        <div className='flex'><h2 className="text-gray-900 text-lg title-font font-medium mb-3">AI Suggestions</h2> &nbsp; <BsStars size={24} color={'#FFEB3B'}/> </div>
+                    <p className="leading-relaxed text-base">AI will analyze the content on your list, taking into account the scores you've given, and suggest you new content accurately!</p>
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
                     <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
-                        <BsFillBookmarkFill size={24} />
+                        <AiFillStar size={24} />
                     </div>
                     <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Watch & Play Later</h2>
-                    <p className="leading-relaxed text-base">Mark it and don&apos;t forget it ever again. Whether you&apos;re saving content to enjoy later or creating a list for a binge-watching session, our app makes it simple and convenient.</p>
+                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">User List</h2>
+                    <p className="leading-relaxed text-base">Add content to your list and mark them as Active, Finished or Dropped. Give them a score as you like. Enter your progress and never forget which episode you were at!</p>
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">

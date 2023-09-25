@@ -3,7 +3,7 @@ import { BsStars } from 'react-icons/bs'
 import { FaSearch, FaRobot } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdMovieFilter } from 'react-icons/md'
-
+import Image from 'next/image'
 
 const Features = () => {
   return (

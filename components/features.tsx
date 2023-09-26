@@ -13,7 +13,7 @@ const Features = () => {
             </div>
             <div className="flex flex-col flex-wrap lg:w-1/2 lg:pl-12 pt-6 lg:text-left text-center my-auto">
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
-                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-[#2196F3] mb-5">
                         <MdMovieFilter size={24} />
                     </div>
                     <div className="flex-grow">
@@ -22,7 +22,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
-                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-[#2196F3] mb-5">
                         <FaRobot size={24} />
                     </div>
                     <div className="flex-grow">
@@ -31,7 +31,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
-                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-[#2196F3] mb-5">
                         <AiFillStar size={24} />
                     </div>
                     <div className="flex-grow">
@@ -40,7 +40,7 @@ const Features = () => {
                     </div>
                 </div>
                 <div className="flex flex-col xl:mb-10 mb-5 lg:items-start items-center">
-                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5">
+                    <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-blue-100 text-[#2196F3] mb-5">
                         <FaSearch size={24} />
                     </div>
                     <div className="flex-grow">

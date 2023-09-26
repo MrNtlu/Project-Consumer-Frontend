@@ -47,7 +47,7 @@ const Pricing = () => {
                     <span className="bg-[#2196F3] text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">RECOMMENDED</span>
                     <h2 className="text-sm tracking-widest title-font mb-1 font-medium">Premium</h2>
                     <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                        <span>$5.99</span>
+                        <span>$4.99</span>
                         <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                     </h1>
                     <p className="flex items-center text-gray-600 mb-2">
@@ -85,7 +85,7 @@ const Pricing = () => {
                     <div className="h-full p-6 rounded-lg border-2 border-grey-300 flex flex-col relative overflow-hidden">
                     <h2 className="text-sm tracking-widest title-font mb-1 font-medium">Premium Supporter</h2>
                     <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                        <span>$9.99</span>
+                        <span>$6.99</span>
                         <span className="text-lg ml-1 font-normal text-gray-500">/mo</span>
                     </h1>
                     <p className="flex items-center text-gray-600 mb-2">
@@ -126,7 +126,7 @@ const Pricing = () => {
                     <div className="h-full p-6 rounded-lg border-2 border-grey-300 flex flex-col relative overflow-hidden">
                     <h2 className="text-sm tracking-widest title-font mb-1 font-medium">Premium Supporter Special</h2>
                     <h1 className="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                        <span>$99.99</span>
+                        <span>$69.99</span>
                         <span className="text-lg ml-1 font-normal text-gray-500">/year</span>
                     </h1>
                     <p className="flex items-center text-gray-600 mb-2">

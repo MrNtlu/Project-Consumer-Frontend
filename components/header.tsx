@@ -12,6 +12,8 @@ const Header = () => {
       <a href="https://watchlistfy.com/#home" className="mr-5 hover:text-[#2196F3]">Home</a>
       <a href="https://watchlistfy.com/#features" className="mr-5 hover:text-[#2196F3]">Features</a>
       <a href="https://watchlistfy.com/#pricing" className="mr-5 hover:text-[#2196F3]">Pricing</a>
+      <a href="https://watchlistfy.canny.io/feature-requests" className="mr-5 hover:text-[#2196F3]">Feature Request</a>
+      <a href="https://watchlistfy.canny.io/changelog" className="mr-5 hover:text-[#2196F3]">Changelog</a>
     </nav>
   </div>
 </header>

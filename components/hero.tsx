@@ -9,7 +9,7 @@ const Hero = () => {
                 <img className="object-contain mx-auto h-full w-3/4" alt="hero" src="/static/images/combination_low.png" />
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="title-font xl:text-5xl sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Watchlistfy - Track Your Fun!</h1>
+                <h1 className="title-font xl:text-5xl sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Watchlistfy: Watchlist Tracker</h1>
                 <p className="mb-16 leading-relaxed xl:text-lg text-base">Discover Anime, Movies, TV Shows, Games - all in one app! Track & list your fun.</p>
                 <div className="flex lg:flex-row md:flex-col hover:text-[#2196F3]">
                     <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer">

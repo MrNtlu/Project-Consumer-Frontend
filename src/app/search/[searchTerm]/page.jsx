@@ -16,8 +16,6 @@ export default async function SearchPage({ params, searchParams }) {
     const data = await res.json();
     const results = data.data;
 
-    console.log(results);
-
     return (
         <div>
             <SearchBox type={searchParams.type} />

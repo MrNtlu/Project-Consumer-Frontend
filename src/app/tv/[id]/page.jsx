@@ -1,9 +1,37 @@
 import Image from 'next/image';
 import React from 'react'
-import { Banner } from "../../../../public/static/images/twitter_banner.png"
-import Head from 'next/head';
 
 const API_URL = process.env.BASE_URL;
+
+export async function generateMetadata({ params }) {
+  const tvId = params.id;
+
+  const res = await fetch(`${API_URL}/tv/details?id=${tvId}`);
+  const { data: tvDetails } = await res.json();
+
+  // Dynamic metadata
+  const pageTitle = tvDetails.title_en || tvDetails.title_original;
+  const description = tvDetails.description;
+  const imageUrl = tvDetails.backdrop || tvDetails.image_url;
+
+  return {
+    title: pageTitle,
+    description: description,
+    openGraph: {
+      type: 'website',
+      url: `https://watchlistfy.com/tv/${tvId}`,
+      title: pageTitle,
+      description: description,
+      images: [{ url: imageUrl, alt: 'TV Series Poster' }],
+    },
+    twitter: {
+      cardType: 'summary_large_image',
+      title: pageTitle,
+      description: description,
+      images: [imageUrl],
+    },
+  };
+}
 
 async function getTVDetails(tvId) {
     const res = await fetch(
@@ -24,24 +52,6 @@ export default async function TVDetailsPage({ params }) {
 
     return (
       <div className="w-full">
-        <Head>
-          <title>Watchlistfy - {movieTitle}</title>
-          <meta name="description" content={tvDescription} />
-
-          {/* Twitter metadata */}
-          <meta name="twitter:card" content={tvDetails.backdrop || Banner} />
-          <meta name="twitter:title" content={tvTitle} />
-          <meta name="twitter:description" content={tvDescription} />
-          <meta name="twitter:image" content={tvImage} />
-
-          {/* Facebook Open Graph metadata */}
-          <meta property="og:title" content={tvTitle} />
-          <meta property="og:description" content={tvDescription} />
-          <meta property="og:image" content={tvImage} />
-          <meta property="og:url" content={`${API_URL}/tv/${params.id}`} />
-          <meta property="og:type" content="website" />
-        </Head>
-
         <div className="p-4 md:pt-8 flex flex-col md:flex-row items-center content-center max-w-6xl mx-auto md:space-x-6">
           <Image
             src={tvImage}

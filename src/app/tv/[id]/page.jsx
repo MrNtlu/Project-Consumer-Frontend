@@ -25,7 +25,7 @@ export default async function TVDetailsPage({ params }) {
     return (
       <div className="w-full">
         <Head>
-          <title>{movieTitle}</title>
+          <title>Watchlistfy - {movieTitle}</title>
           <meta name="description" content={tvDescription} />
 
           {/* Twitter metadata */}

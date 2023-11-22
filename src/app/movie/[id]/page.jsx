@@ -16,14 +16,11 @@ export default async function MovieDetailsPage({ params }) {
     const data = await getMovieDetails(params.id);
     const movieDetails = data.data;
 
-    console.log(movieDetails);
     return (
         <div className="w-full">
         <div className="p-4 md:pt-8 flex flex-col md:flex-row items-center content-center max-w-6xl mx-auto md:space-x-6">
           <Image
-            src={`https://image.tmdb.org/t/p/original/${
-              movieDetails.backdrop || movieDetails.image_url
-            }`}
+            src={movieDetails.backdrop || movieDetails.image_url}
             width={500}
             height={300}
             className="rounded-lg"

@@ -26,7 +26,7 @@ export default async function SearchPage({ params, searchParams }) {
                 <NoSearchResult search={params.searchTerm} />
             )}
 
-            {results && <Results results={results} />}
+            {results && <Results type={searchParams.type} results={results} />}
         </div>
     );
 }

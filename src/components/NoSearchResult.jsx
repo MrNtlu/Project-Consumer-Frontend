@@ -6,7 +6,7 @@ export default function NoSearchResult({ search }) {
         <div className="text-center">
             <p className="text-6xl font-semibold text-indigo-600">404</p>
             <h1 className="mt-4 text-3xl font-bold tracking-tight sm:text-5xl">Not Found 😔</h1>
-            <p className="mt-6 text-2xl leading-7">Couldn't find any result for {search}</p>
+            <p className="mt-6 text-2xl leading-7">Couldn&apos;t find any result for {search}</p>
         </div>
     </main>
   )

@@ -4,9 +4,9 @@ import { FaSearch, FaRobot } from 'react-icons/fa'
 import { AiFillStar } from 'react-icons/ai'
 import { MdMovieFilter } from 'react-icons/md'
 
-const Features = () => {
+export default function Features() {
   return (
-    <section id="features" className="text-gray-600 body-font h-full w-full">
+    <section id="features" className="text-gray-600 dark:text-gray-300 body-font h-full w-full">
         <div className="container px-5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg">
                 <img className="object-contain mx-auto h-full w-3/4" src="/static/images/framed.png" alt='logo' />
@@ -17,7 +17,7 @@ const Features = () => {
                         <MdMovieFilter size={24} />
                     </div>
                     <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">All in One Place</h2>
+                    <h2 className="text-lg title-font font-medium mb-3">All in One Place</h2>
                     <p className="leading-relaxed text-base">Track your fun in single application. Movies, TV Series, Anime and Games.</p>
                     </div>
                 </div>
@@ -26,7 +26,7 @@ const Features = () => {
                         <FaRobot size={24} />
                     </div>
                     <div className="flex-grow">
-                        <div className="flex"><h2 className="text-gray-900 text-lg title-font font-medium mb-3">AI Suggestions</h2>  <BsStars size={24} color={"#FFEB3B"}/> </div>
+                        <div className="flex"><h2 className="text-lg title-font font-medium mb-3">AI Suggestions</h2>  <BsStars size={24} color={"#FFEB3B"}/> </div>
                     <p className="leading-relaxed text-base">AI will analyze the content on your list, taking into account the scores you&apos;ve given, and suggest you new content accurately!</p>
                     </div>
                 </div>
@@ -35,7 +35,7 @@ const Features = () => {
                         <AiFillStar size={24} />
                     </div>
                     <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">User List</h2>
+                    <h2 className="text-lg title-font font-medium mb-3">User List</h2>
                     <p className="leading-relaxed text-base">Add content to your list and mark them as Active, Finished or Dropped. Give them a score as you like. Enter your progress and never forget which episode you were at!</p>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ const Features = () => {
                         <FaSearch size={24} />
                     </div>
                     <div className="flex-grow">
-                    <h2 className="text-gray-900 text-lg title-font font-medium mb-3">Discover & Search</h2>
+                    <h2 className="text-lg title-font font-medium mb-3">Discover & Search</h2>
                     <p className="leading-relaxed text-base">Discover and search new content. With powerful search features and filters, you can quickly find exactly what you&apos;re looking for. </p>
                     </div>
                 </div>
@@ -53,5 +53,3 @@ const Features = () => {
     </section>
   )
 }
-
-export default Features

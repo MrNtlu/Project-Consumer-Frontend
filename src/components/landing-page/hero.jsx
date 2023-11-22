@@ -1,17 +1,17 @@
 import React from 'react'
 import { BsGooglePlay, BsApple } from 'react-icons/bs'
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section id="home" className="text-gray-600 body-font h-screen w-full">
+    <section id="home" className="text-gray-600 dark:text-gray-300 body-font h-screen w-full">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center h-full">
             <div className="h-full w-full">
                 <img className="object-contain mx-auto h-full w-3/4" alt="hero" src="/static/images/combination_low.png" />
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h1 className="title-font xl:text-5xl sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Watchlistfy: Watchlist Tracker</h1>
+                <h1 className="title-font xl:text-5xl sm:text-4xl text-3xl mb-4 font-medium">Watchlistfy: Watchlist Tracker</h1>
                 <p className="mb-16 leading-relaxed xl:text-lg text-base">Discover Anime, Movies, TV Shows, Games - all in one app! Track & list your fun.</p>
-                <div className="flex lg:flex-row md:flex-col hover:text-[#2196F3]">
+                <div className="flex lg:flex-row md:flex-col text-gray-600 hover:text-[#2196F3]">
                     <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer">
                         <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center focus:outline-none">
                             <BsGooglePlay size={25} />
@@ -34,5 +34,3 @@ const Hero = () => {
     </section>
   )
 }
-
-export default Hero

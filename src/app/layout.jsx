@@ -18,13 +18,13 @@ export const metadata = {
     url: `https://watchlistfy.com/`,
     title: "Watchlistfy",
     description: "Discover Anime, Movies, TV Shows, Games - all in one app! Track & list your fun. Introducing Watchlistfy, the all-in-one watchlist tracker app that revolutionizes how you keep track of your entertainment journey. From movies and TV shows to anime and games, it is your one-stop movie log destination for all things fun.",
-    images: [{ url: "../../public/static/images/twitter_banner.png", alt: 'Movie Poster' }],
+    images: [{ url: "/static/images/twitter_banner.png", alt: 'Movie Poster' }],
   },
   twitter: {
     cardType: 'summary_large_image',
     title: "Watchlistfy",
     description: "Discover Anime, Movies, TV Shows, Games - all in one app! Track & list your fun. Introducing Watchlistfy, the all-in-one watchlist tracker app that revolutionizes how you keep track of your entertainment journey. From movies and TV shows to anime and games, it is your one-stop movie log destination for all things fun.",
-    images: ["../../public/static/images/twitter_banner.png"],
+    images: ["/static/images/twitter_banner.png"],
   },
 }
 

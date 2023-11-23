@@ -21,7 +21,7 @@ export default function Card({ type, result }) {
                 alt="Image is not available"
             />
             <div className="p-2">
-                <h2 className="truncate text-lg font-bold text-justify">
+                <h2 className="truncate text-sm font-bold text-justify">
                     {result.title_en || result.title_original}
                 </h2>
             </div>

@@ -12,7 +12,7 @@ export default function NavBarItem({title, param}) {
         <div>
             <Link className={
                 `m-4 hover:text-gray-300 font-semibold p-2 ${
-                    type && type === param && "rounded-full underline underline-offset-8 decoration-4 decoration-white"
+                    type && type === param && "text-[#2196F3] rounded-full underline underline-offset-8 decoration-4 decoration-[#2196F3]"
                 }`
             } href={`/?type=${param}`}>
                 {title}

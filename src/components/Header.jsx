@@ -24,8 +24,8 @@ export default async function Header() {
         <div className="flex mx-2">
           <MenuItem title="Home" address="/" Icon={AiFillHome} />
           <MenuItem title="Download" address="/promo" Icon={AiOutlineDownload} />
-          <MenuItem title="Feature Request" address="https://watchlistfy.canny.io/feature-requests" Icon={FaLightbulb} />
-          <MenuItem title="Changelog" address="https://watchlistfy.canny.io/changelog" Icon={MdOutlineUpdate} />
+          <MenuItem title="Feature Request" address="https://watchlistfy.canny.io/feature-requests" Icon={null} />
+          <MenuItem title="Changelog" address="https://watchlistfy.canny.io/changelog" Icon={null} />
         </div>
         <div className="flex items-center space-x-6">
           {/* {

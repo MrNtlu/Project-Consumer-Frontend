@@ -6,7 +6,11 @@ import { useSearchParams } from 'next/navigation'
 
 export default function NavBarItem({title, param}) {
     const searchParams = useSearchParams();
-    const type = searchParams.get("type");
+    var type = searchParams.get("type");
+
+    if (type == null) {
+        type = "movie";
+    }
 
     return (
         <div>

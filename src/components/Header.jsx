@@ -28,12 +28,12 @@ export default async function Header() {
           <MenuItem title="Changelog" address="https://watchlistfy.canny.io/changelog" Icon={MdOutlineUpdate} />
         </div>
         <div className="flex items-center space-x-6">
-          {
+          {/* {
             !userInfo && (<MenuItem title="Login/Register" address="/auth/login" Icon={AiFillHome} />)
           }
           {
             userInfo && (<MenuItem title={`Welcome back, ${userInfo.username}`} address="/profile" Icon={IoPersonCircle } />)
-          }
+          } */}
           <DarkModeSwitch />
           <Link href="/">
             <Image height={54} width={54} src={LogoImg} className='mx-6' alt='Watchlistfy' />

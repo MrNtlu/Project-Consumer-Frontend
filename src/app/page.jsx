@@ -28,17 +28,10 @@ export default async function Home({ searchParams }) {
 
   return (
     <div>
-    <main className={`grid ${true ? "grid-cols-1 md:grid-cols-3 md:max-w-6xl mx-auto": "grid-cols-1 md:grid-cols-2 md:max-w-3xl mx-auto"}  `}>
-      <section className="hidden md:inline-grid md:col-span-1">
-        <div className="fixed w-[380px]">
-          <p>Text</p>
-        </div>
-      </section>
-      <section className="md:col-span-2">
-        <NavBar />
-        <SearchBox type={type} />
-        <Results results={results} type={type} />
-      </section>
+    <main>
+      <NavBar />
+      <SearchBox type={type} />
+      <Results results={results} type={type} />
     </main>
     </div>
   );

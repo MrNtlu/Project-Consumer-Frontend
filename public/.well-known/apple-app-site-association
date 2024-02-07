@@ -1,0 +1,40 @@
+{
+  "applinks":{
+    "apps":[
+       
+    ],
+    "details":[
+      {
+        "appIDs":[
+          "7Z7M7NW52W.com.mrntlu.watchlistfy"
+        ],
+        "components":[
+          {
+            "/":"/movie/*",
+            "comment":"Movie Details"
+          },
+          {
+            "/":"/tv/*",
+            "comment":"TV Series Details"
+          },
+          {
+            "/":"/anime/*",
+            "comment":"Anime Details"
+          },
+          {
+            "/":"/game/*",
+            "comment":"Game Details"
+          },
+          {
+            "/":"/profile/*",
+            "comment":"Profile of the User"
+          },
+          {
+            "/":"/friend-requests",
+            "comment":"Friend Requests"
+          }
+        ]
+      }
+    ]
+  }
+}

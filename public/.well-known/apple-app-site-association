@@ -30,6 +30,10 @@
             "comment":"Profile of the User"
           },
           {
+            "/":"/custom-list/*",
+            "comment":"Custom list details"
+          },
+          {
             "/":"/friend-requests",
             "comment":"Friend Requests"
           }

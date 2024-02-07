@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   experimental: {
     appDir: true,
   },
@@ -8,4 +8,18 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = {
+  async headers() {
+    return [
+      {
+        source: '/.well-known/apple-app-site-association',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/json',
+          },
+        ],
+      },
+    ];
+  },
+};

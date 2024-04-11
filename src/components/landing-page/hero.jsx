@@ -21,7 +21,7 @@ export default function Hero() {
                             </span>
                         </button>
                     </a>
-                    <a href="https://apps.apple.com/tr/app/watchlistfy-discover-track/id6476311748">
+                    <a href="https://apps.apple.com/tr/app/watchlistfy-ai-tracker/id6476311748">
                         <button className="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none hover:text-[#2196F3]">
                             <BsApple size={25} />
                             <span className="ml-4 flex items-start flex-col leading-none">

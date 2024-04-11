@@ -4,7 +4,7 @@ import { AiFillHome } from "react-icons/ai"
 import Link from 'next/link'
 import Image from 'next/image'
 import DarkModeSwitch from './DarkModeSwitch'
-import LogoImg from 'public/static/images/logo.png'
+import LogoImg from '../../public/static/images/logo.png'
 import { cookies } from 'next/headers'
 import { getUserInfo } from '../utility/auth'
 

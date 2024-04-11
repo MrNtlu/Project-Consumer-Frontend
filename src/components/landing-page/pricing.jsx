@@ -33,13 +33,6 @@ export default function Pricing() {
                         </svg>
                         </span>Watch Later limited to 50
                     </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer">
-                        <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Download
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </a>
                     </div>
                 </div>
                 <div className="p-4 xl:w-1/4 md:w-1/2 w-full">
@@ -85,13 +78,6 @@ export default function Pricing() {
                         </svg>
                         </span>More soon...
                     </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer">
-                        <button className="flex items-center mt-auto text-white bg-[#2196F3] border-0 py-2 px-4 w-full focus:outline-none hover:bg-blue-600 rounded">Download & Subscribe
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </a>
                     <p className="text-xs text-gray-500 mt-3">Prices might vary from region to region.</p>
                     </div>
                 </div>
@@ -140,13 +126,6 @@ export default function Pricing() {
                     <p className="flex items-center text-gray-600 dark:text-gray-300 mb-6">
                         <span className="w-4 h-4 mr-2 inline-flex items-center"/>
                     </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer">
-                        <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Download & Subscribe
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </a>
                     <p className="text-xs text-gray-500 mt-3">Prices might vary from region to region.</p>
                     </div>
                 </div>
@@ -199,13 +178,6 @@ export default function Pricing() {
                         </svg>
                         </span>More soon...
                     </p>
-                    <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer">
-                        <button className="flex items-center mt-auto text-white bg-gray-400 border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded">Download & Subscribe
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </a>
                     <p className="text-xs text-gray-500 mt-3">Prices might vary from region to region.</p>
                     </div>
                 </div>

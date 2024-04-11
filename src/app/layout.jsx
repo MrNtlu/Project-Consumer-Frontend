@@ -2,6 +2,8 @@ import Header from '../components/Header';
 import './globals.css'
 import Providers from "./Providers";
 import Footer from "../components/landing-page/footer";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata = {
   title: 'Watchlistfy',
@@ -36,7 +38,8 @@ export default function RootLayout({ children }) {
           <Header />
 
           {children}
-
+          <Analytics />
+          <SpeedInsights />
           <Footer />
         </Providers>
       </body>

@@ -6,7 +6,7 @@ export default function Hero() {
     <section id="home" className="text-gray-600 dark:text-gray-300 body-font h-screen w-full">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center h-full">
             <div className="h-full w-full">
-                <img className="object-contain mx-auto h-full w-3/4" alt="hero" src="/static/images/combination_low.png" />
+                <img className="object-contain mx-auto h-full w-3/4" alt="hero" src="/static/images/combination.png" />
             </div>
             <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                 <h1 className="title-font xl:text-5xl sm:text-4xl text-3xl mb-4 font-medium">Watchlistfy: AI & Tracker</h1>

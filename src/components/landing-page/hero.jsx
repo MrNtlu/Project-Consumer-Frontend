@@ -61,20 +61,20 @@ export default function Hero() {
                         </Link>
 
                         <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer" className="transform transition-transform hover:scale-105">
-                            <button className="bg-gray-100 dark:bg-gray-800 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
+                            <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
                                 <BsGooglePlay size={28} className="flex-shrink-0" />
                                 <span className="ml-3 flex items-start flex-col leading-none min-w-0">
-                                    <span className="text-xs mb-1 text-gray-500 whitespace-nowrap">GET IT ON</span>
+                                    <span className="text-xs mb-1 text-gray-500 dark:text-gray-400 whitespace-nowrap">GET IT ON</span>
                                     <span className="title-font font-medium text-base whitespace-nowrap">Google Play</span>
                                 </span>
                             </button>
                         </a>
 
                         <a href="https://apps.apple.com/app/watchlistfy/id1622727903" className="transform transition-transform hover:scale-105">
-                            <button className="bg-gray-100 dark:bg-gray-800 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
+                            <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
                                 <BsApple size={28} className="flex-shrink-0" />
                                 <span className="ml-3 flex items-start flex-col leading-none min-w-0">
-                                    <span className="text-xs mb-1 text-gray-500 whitespace-nowrap">DOWNLOAD ON</span>
+                                    <span className="text-xs mb-1 text-gray-500 dark:text-gray-400 whitespace-nowrap">DOWNLOAD ON</span>
                                     <span className="title-font font-medium text-base whitespace-nowrap">App Store</span>
                                 </span>
                             </button>

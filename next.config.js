@@ -1,14 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  experimental: {
-    appDir: true,
-  },
   images: {
-    domains: ["image.tmdb.org", "cdn.myanimelist.net", "media.rawg.io"],
+    domains: ["image.tmdb.org", "cdn.myanimelist.net", "media.rawg.io", "img.logo.dev"],
   },
-}
-
-module.exports = {
   async headers() {
     return [
       {
@@ -22,4 +16,4 @@ module.exports = {
       },
     ];
   },
-};
+}

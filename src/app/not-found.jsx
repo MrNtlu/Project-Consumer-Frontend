@@ -1,4 +1,5 @@
 import { BsGooglePlay } from "react-icons/bs";
+import { SiAppstore } from "react-icons/si";
 
 export default function Custom404() {
     return (

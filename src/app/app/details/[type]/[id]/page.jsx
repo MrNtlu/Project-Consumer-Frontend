@@ -804,7 +804,7 @@ export default function DetailsPage() {
                     </p>
                     <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center items-center">
                         <a
-                            href="https://play.google.com/store/apps/details?id=com.mrntlu.localstorage"
+                            href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center space-x-3 bg-black bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition-all duration-200 w-full sm:w-auto"
@@ -813,7 +813,7 @@ export default function DetailsPage() {
                             <span className="text-sm font-medium">Get on Google Play</span>
                         </a>
                         <a
-                            href="https://apps.apple.com/app/watchlistfy/id6446774935"
+                            href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center space-x-3 bg-black bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg transition-all duration-200 w-full sm:w-auto"

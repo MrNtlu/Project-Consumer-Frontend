@@ -70,7 +70,7 @@ export default function Hero() {
                             </button>
                         </a>
 
-                        <a href="https://apps.apple.com/app/watchlistfy/id1622727903" className="transform transition-transform hover:scale-105">
+                        <a href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748" className="transform transition-transform hover:scale-105">
                             <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
                                 <BsApple size={28} className="flex-shrink-0" />
                                 <span className="ml-3 flex items-start flex-col leading-none min-w-0">

@@ -47,11 +47,11 @@ export default function MobileAppBanner() {
 
     const getStoreLink = () => {
         if (platform === 'android') {
-            return 'https://play.google.com/store/apps/details?id=com.mrntlu.localstorage'
+            return 'https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer'
         } else if (platform === 'ios') {
-            return 'https://apps.apple.com/app/watchlistfy/id6446774935'
+            return 'https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748'
         }
-        return 'https://play.google.com/store/apps/details?id=com.mrntlu.localstorage'
+        return 'https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer'
     }
 
     const getStoreText = () => {

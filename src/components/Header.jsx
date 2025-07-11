@@ -1,7 +1,7 @@
 import React from 'react'
 import MenuItem from './MenuItem'
 import { AiFillHome, AiOutlineDownload } from 'react-icons/ai'
-import { MdWeb } from 'react-icons/md'
+import { MdWeb, MdContactSupport } from 'react-icons/md'
 import Link from 'next/link'
 import Image from 'next/image'
 import DarkModeSwitch from './DarkModeSwitch'
@@ -15,6 +15,7 @@ export default function Header() {
         <div className="flex mx-2">
           <MenuItem title="Home" address="/" Icon={AiFillHome} />
           <MenuItem title="Web App" address="/app" Icon={MdWeb} />
+          <MenuItem title="Contact" address="/contact" Icon={MdContactSupport} />
           {/* <MenuItem title="Download" address="/promo" Icon={AiOutlineDownload} /> */}
         </div>
         <div className="flex items-center space-x-6">

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import { BsGooglePlay, BsTwitter, BsFillFileEarmarkTextFill } from 'react-icons/bs'
 import { SiAppstore } from "react-icons/si";
-import { MdPrivacyTip } from 'react-icons/md'
+import { MdPrivacyTip, MdContactSupport } from 'react-icons/md'
 
 export default function Footer() {
     return (
@@ -31,6 +31,9 @@ export default function Footer() {
                     </a>
                     <a href='terms-conditions.html' className="ml-3 hover:text-[#2196F3]">
                         <BsFillFileEarmarkTextFill />
+                    </a>
+                    <a href='/contact' className="ml-3 hover:text-[#2196F3]">
+                        <MdContactSupport />
                     </a>
                 </span>
             </div>

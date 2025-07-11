@@ -65,7 +65,7 @@ export default function ContactPage() {
                         Contact Us
                     </h1>
                     <p className="text-gray-600 dark:text-gray-400">
-                        Have a question or feature request? We'd love to hear from you.
+                        Have a question or feature request? We would love to hear from you.
                     </p>
                 </div>
 
@@ -204,7 +204,7 @@ export default function ContactPage() {
                                 Message Sent
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                Your message has been sent successfully. We'll review it and get back to you if needed.
+                                Your message has been sent successfully. We will review it and get back to you if needed.
                             </p>
                             <p className="text-sm text-gray-500 dark:text-gray-500">
                                 Thank you for reaching out to us!

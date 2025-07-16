@@ -27,7 +27,11 @@ export default function Pricing() {
                             <div className="mb-6">
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
-                                    AI Recommendations every 10 days
+                                    AI Suggestions 40 content per week
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
+                                    AI Natural Language Search 3 credits per month
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
@@ -40,6 +44,10 @@ export default function Pricing() {
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
                                     Basic import features
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
+                                    Occasional Ads
                                 </p>
                             </div>
 
@@ -67,17 +75,31 @@ export default function Pricing() {
                             <div className="mb-6">
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    <FaRobot className="w-4 h-4 mr-2 text-[#2196F3]" />
-                                    AI Recommendations every 3 days
+                                    AI Suggestions 80 content every 3 days
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    <FaInfinity className="w-4 h-4 mr-2 text-[#2196F3]" />
+                                    AI Mood Suggestions 80 content per mood
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    AI Natural Language Search 10 credits per month
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Full access to AI Hub
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
                                     Unlimited tracking & lists
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
                                     Enhanced AI accuracy
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Ad free experience
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />

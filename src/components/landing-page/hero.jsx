@@ -39,12 +39,12 @@ export default function Hero() {
                         </div>
                         <div className="flex items-center bg-purple-50 dark:bg-purple-900/30 text-purple-600 px-3 py-2 rounded-full text-sm font-medium hover:scale-110 transition-all duration-300 animate-bounce-in" style={{ animationDelay: '0.3s' }}>
                             <MdStar className="mr-2" />
-                            Free to Start
+                            Free to Download
                         </div>
                     </div>
 
                     <p className="mb-8 leading-relaxed xl:text-lg text-base text-gray-600 dark:text-gray-300">
-                        Track your entertainment journey and get AI-powered recommendations.
+                        Track your entertainment journey and get AI-powered suggestions.
                     </p>
 
                     {/* CTA Buttons */}

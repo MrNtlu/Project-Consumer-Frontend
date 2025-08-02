@@ -27,7 +27,7 @@ export default function Pricing() {
                             <div className="mb-6">
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
-                                    AI Recommendations every 10 days
+                                    AI Suggestions every 10 days
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
@@ -68,7 +68,23 @@ export default function Pricing() {
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
                                     <FaRobot className="w-4 h-4 mr-2 text-[#2196F3]" />
-                                    AI Recommendations every 3 days
+                                    AI Suggestions every 3 days
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Full Access to AI Hub
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Curated Collections
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    One-Click Suggestions
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Mood Based Collections
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />

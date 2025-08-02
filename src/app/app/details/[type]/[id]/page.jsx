@@ -800,7 +800,7 @@ export default function DetailsPage() {
                 <div className="max-w-4xl mx-auto text-center">
                     <h3 className="text-lg font-bold mb-2">Get the Full Experience</h3>
                     <p className="text-blue-100 mb-4 text-sm">
-                        Download our mobile app for personalized lists, offline access, and AI recommendations
+                        Download our mobile app for personalized lists, offline access, and AI suggestions
                     </p>
                     <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center items-center">
                         <a

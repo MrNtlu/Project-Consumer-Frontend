@@ -44,21 +44,11 @@ export default function Hero() {
                     </div>
 
                     <p className="mb-8 leading-relaxed xl:text-lg text-base text-gray-600 dark:text-gray-300">
-                        Track your entertainment journey and get AI-powered recommendations.
+                        Track your entertainment journey and get AI-powered suggestions.
                     </p>
 
                     {/* CTA Buttons */}
                     <div className="flex flex-col sm:flex-row lg:flex-row md:flex-col gap-4 text-gray-600">
-                        {/* Web App Button */}
-                        <Link href="/app" className="transform transition-transform hover:scale-105">
-                            <button className="bg-[#2196F3] text-white inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-blue-600 shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
-                                <MdWeb size={28} className="flex-shrink-0" />
-                                <span className="ml-3 flex items-start flex-col leading-none min-w-0">
-                                    <span className="text-xs mb-1 opacity-90 whitespace-nowrap">TRY THE</span>
-                                    <span className="title-font font-medium text-base whitespace-nowrap">Web App</span>
-                                </span>
-                            </button>
-                        </Link>
 
                         <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer" className="transform transition-transform hover:scale-105">
                             <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">

@@ -14,7 +14,6 @@ export default function Header() {
       <div className='flex justify-between mx-2 max-w-6xl sm:mx-auto items-center py-6'>
         <div className="flex mx-2">
           <MenuItem title="Home" address="/" Icon={AiFillHome} />
-          <MenuItem title="Web App" address="/app" Icon={MdWeb} />
           <MenuItem title="Contact" address="/contact" Icon={MdContactSupport} />
           {/* <MenuItem title="Download" address="/promo" Icon={AiOutlineDownload} /> */}
         </div>

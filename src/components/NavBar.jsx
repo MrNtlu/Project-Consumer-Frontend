@@ -9,7 +9,6 @@ export default function NavBar() {
       <NavBarItem title="Anime" param="anime" />
       <NavBarItem title="Game" param="game" />
       <NavBarItem title="Home" address="/" />
-      <NavBarItem title="Web App" address="/app" />
     </div>
   )
 }

@@ -1,10 +1,10 @@
 export const metadata = {
-    title: 'Delete Account - Watchlistfy',
-    description: 'Request deletion of your Watchlistfy account and all associated data. This page is provided for compliance with Google Play Store requirements.',
+    title: 'Delete Account - WaLi: Log, Track & Suggestions',
+    description: 'Request deletion of your WaLi: Log, Track & Suggestions account and all associated data. Official account deletion page by MrNtlu for Google Play Store compliance.',
     robots: 'index, follow',
     openGraph: {
-        title: 'Delete Account - Watchlistfy',
-        description: 'Request deletion of your Watchlistfy account and all associated data.',
+        title: 'Delete Account - WaLi: Log, Track & Suggestions',
+        description: 'Request deletion of your WaLi: Log, Track & Suggestions account and all associated data.',
         type: 'website',
     },
 };

@@ -52,17 +52,17 @@ export default function DeleteAccountPage() {
                 <div className="text-center mb-8">
                     <div className="mb-4">
                         <h2 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-1">
-                            Watchlistfy App
+                            WaLi: Log, Track & Suggestions
                         </h2>
                         <p className="text-sm text-gray-500 dark:text-gray-400">
-                            Developer: Watchlistfy
+                            Developer: MrNtlu
                         </p>
                     </div>
                     <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                        Delete Your Account
+                        Account Deletion Request – WaLi: Log, Track & Suggestions
                     </h1>
                     <p className="text-gray-600 dark:text-gray-400">
-                        Request deletion of your Watchlistfy account and all associated data
+                        Official account deletion page for WaLi: Log, Track & Suggestions by MrNtlu
                     </p>
                 </div>
 
@@ -70,19 +70,24 @@ export default function DeleteAccountPage() {
                     {!isSubmitted ? (
                         <>
                             <div className="mb-6">
-                                <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                                    Account Deletion Request - Watchlistfy App
-                                </h2>
+                                <div className="mb-4 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg">
+                                    <p className="text-sm text-blue-800 dark:text-blue-200 mb-2">
+                                        <strong>App:</strong> WaLi: Log, Track & Suggestions (com.mrntlu.projectconsumer)<br />
+                                        <strong>Developer:</strong> MrNtlu
+                                    </p>
+                                    <p className="text-sm text-blue-700 dark:text-blue-300">
+                                        This is the official account deletion page for WaLi: Log, Track & Suggestions by MrNtlu.
+                                        If you no longer have the app installed, you can still request deletion here.
+                                    </p>
+                                </div>
                                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                                    To request deletion of your Watchlistfy account and all associated data,
-                                    please enter your email address below. We will process your request within
-                                    30 days and send you a confirmation email. This deletion request is for
-                                    accounts created within the Watchlistfy mobile application.
+                                    Enter the email associated with your WaLi account. You'll receive a confirmation link;
+                                    after confirming, we'll delete your account and all associated data within 30 days.
                                 </p>
                                 <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-md p-3 mb-4">
                                     <p className="text-sm text-yellow-800 dark:text-yellow-200">
-                                        <strong>Note:</strong> This action cannot be undone. All your watchlists,
-                                        ratings, and account data will be permanently deleted.
+                                        <strong>Warning:</strong> This deletion cannot be undone. All watchlists,
+                                        ratings, and synced data will be permanently removed from your WaLi account.
                                     </p>
                                 </div>
                             </div>
@@ -90,7 +95,7 @@ export default function DeleteAccountPage() {
                             <form onSubmit={handleSubmit} className="space-y-4">
                                 <div>
                                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                                        Email Address
+                                        Email address associated with your WaLi account
                                     </label>
                                     <input
                                         type="email"
@@ -98,7 +103,7 @@ export default function DeleteAccountPage() {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:text-white"
-                                        placeholder="Enter your email address"
+                                        placeholder="mrntlu@gmail.com"
                                         required
                                     />
                                 </div>
@@ -141,8 +146,8 @@ export default function DeleteAccountPage() {
                                 Request Submitted
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                Your account deletion request has been submitted successfully.
-                                You will receive a confirmation email within 24 hours.
+                                Your WaLi account deletion request has been submitted successfully.
+                                You will receive a verification email within 24 hours to confirm the deletion.
                             </p>
                             <p className="text-sm text-gray-500 dark:text-gray-500">
                                 If you have any questions, please contact us at support@watchlistfy.com
@@ -155,7 +160,7 @@ export default function DeleteAccountPage() {
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         This page is provided for compliance with Google Play Store requirements.
                         <br />
-                        App: Watchlistfy | Developer: Watchlistfy
+                        App: <strong>WaLi: Log, Track & Suggestions</strong> (com.mrntlu.projectconsumer) | Developer: <strong>MrNtlu</strong>
                     </p>
                 </div>
             </div>

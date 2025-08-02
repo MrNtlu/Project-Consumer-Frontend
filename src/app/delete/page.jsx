@@ -81,8 +81,8 @@ export default function DeleteAccountPage() {
                                     </p>
                                 </div>
                                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-                                    Enter the email associated with your WaLi account. You'll receive a confirmation link;
-                                    after confirming, we'll delete your account and all associated data within 30 days.
+                                    Enter the email associated with your WaLi account. You will receive a confirmation link;
+                                    after confirming, we will delete your account and all associated data within 30 days.
                                 </p>
                                 <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-md p-3 mb-4">
                                     <p className="text-sm text-yellow-800 dark:text-yellow-200">

@@ -27,11 +27,7 @@ export default function Pricing() {
                             <div className="mb-6">
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
-                                    AI Suggestions 40 content per week
-                                </p>
-                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
-                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
-                                    AI Natural Language Search 3 credits per month
+                                    AI Suggestions every 10 days
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
@@ -75,19 +71,24 @@ export default function Pricing() {
                             <div className="mb-6">
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    AI Suggestions 80 content every 3 days
+                                    <FaRobot className="w-4 h-4 mr-2 text-[#2196F3]" />
+                                    AI Suggestions every 3 days
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    AI Mood Suggestions 80 content per mood
+                                    Full Access to AI Hub
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    AI Natural Language Search 10 credits per month
+                                    Curated Collections
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    Full access to AI Hub
+                                    One-Click Suggestions
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Mood Based Collections
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />

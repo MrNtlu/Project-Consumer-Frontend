@@ -41,7 +41,7 @@ export default function ContentGrid({ data }) {
                         Discover Your Next Favorite
                     </h1>
                     <p className="text-blue-100 text-sm sm:text-lg md:text-xl mb-4 sm:mb-8 px-2">
-                        Explore movies, TV shows, anime, and games with AI-powered recommendations
+                        Explore movies, TV shows, anime, and games with AI-powered suggestions
                     </p>
                 </div>
             </div>

@@ -50,11 +50,19 @@ export default function DeleteAccountPage() {
         <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-md mx-auto">
                 <div className="text-center mb-8">
+                    <div className="mb-4">
+                        <h2 className="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-1">
+                            Watchlistfy App
+                        </h2>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                            Developer: Watchlistfy
+                        </p>
+                    </div>
                     <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
                         Delete Your Account
                     </h1>
                     <p className="text-gray-600 dark:text-gray-400">
-                        Request deletion of your Watchlistfy account
+                        Request deletion of your Watchlistfy account and all associated data
                     </p>
                 </div>
 
@@ -63,12 +71,13 @@ export default function DeleteAccountPage() {
                         <>
                             <div className="mb-6">
                                 <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                                    Account Deletion Request
+                                    Account Deletion Request - Watchlistfy App
                                 </h2>
                                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                                     To request deletion of your Watchlistfy account and all associated data,
                                     please enter your email address below. We will process your request within
-                                    30 days and send you a confirmation email.
+                                    30 days and send you a confirmation email. This deletion request is for
+                                    accounts created within the Watchlistfy mobile application.
                                 </p>
                                 <div className="bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 rounded-md p-3 mb-4">
                                     <p className="text-sm text-yellow-800 dark:text-yellow-200">

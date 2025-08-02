@@ -34,7 +34,7 @@ export default function Features() {
                             </div>
                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">AI-Powered Suggestions</h2>
                             <p className="leading-relaxed text-base text-gray-600 dark:text-gray-300 mb-4">
-                                Our AI suggestion analyzes your ratings and viewing patterns to discover hidden gems you&apos;ll absolutely love.
+                                Our AI suggestions analyzes your ratings and viewing patterns to discover hidden gems you&apos;ll absolutely love.
                             </p>
                             <div className="text-sm text-[#2196F3] font-medium">
                                 Smart • Accurate • Personal
@@ -119,12 +119,12 @@ export default function Features() {
                             <div className="w-12 h-12 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-600 mb-5 group-hover:animate-bounce">
                                 <AiFillStar size={24} />
                             </div>
-                            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Never Lose Progress</h2>
+                            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">AI Hub</h2>
                             <p className="leading-relaxed text-base text-gray-600 dark:text-gray-300 mb-4">
-                                Track episodes, volumes, and game levels. Mark as Active, Paused, Finished, or Dropped with quick resume shortcuts.
+                                Access to AI Hub, where you can use AI to find content based on your mood, text search, and more.
                             </p>
                             <div className="text-sm text-yellow-600 font-medium">
-                                Track • Resume • Complete
+                                AI • Mood • Entertainment
                             </div>
                         </div>
                     </div>

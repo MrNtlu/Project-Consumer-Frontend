@@ -39,7 +39,7 @@ export default function Hero() {
                         </div>
                         <div className="flex items-center bg-purple-50 dark:bg-purple-900/30 text-purple-600 px-3 py-2 rounded-full text-sm font-medium hover:scale-110 transition-all duration-300 animate-bounce-in" style={{ animationDelay: '0.3s' }}>
                             <MdStar className="mr-2" />
-                            Free to Start
+                            Free to Download
                         </div>
                     </div>
 

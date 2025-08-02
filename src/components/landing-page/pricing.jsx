@@ -41,6 +41,10 @@ export default function Pricing() {
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
                                     Basic import features
                                 </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
+                                    Occasional Ads
+                                </p>
                             </div>
 
                             <div className="mt-auto">
@@ -88,12 +92,15 @@ export default function Pricing() {
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
-                                    <FaInfinity className="w-4 h-4 mr-2 text-[#2196F3]" />
                                     Unlimited tracking & lists
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
                                     Enhanced AI accuracy
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    Ad free experience
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />

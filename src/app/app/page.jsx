@@ -154,7 +154,7 @@ export default function AppPage() {
                 <div className="max-w-4xl mx-auto text-center">
                     <h3 className="text-base sm:text-lg font-bold mb-2">Get the Full Experience</h3>
                     <p className="text-blue-100 mb-3 sm:mb-4 text-xs sm:text-sm px-2">
-                        Download our mobile app for personalized lists, offline access, and AI suggestions
+                        Download our mobile app for personalized lists, discovery and AI suggestions
                     </p>
                     <div className="flex flex-col gap-2 sm:flex-row sm:gap-3 justify-center items-center">
                         <a
@@ -182,4 +182,4 @@ export default function AppPage() {
 
         </div>
     )
-} 
+}

@@ -26,6 +26,13 @@ export const metadata = {
     'tv show recommendations',
     'anime recommendations',
     'game recommendations',
+    'AI suggestions',
+    'AI mood suggestions',
+    'AI natural language search',
+    'AI hub',
+    'AI powered',
+    'AI powered entertainment',
+    'AI powered entertainment tracker',
     'TMDB',
     'MyAnimeList',
     'RAWG',
@@ -46,7 +53,7 @@ export const metadata = {
     url: 'https://watchlistfy.vercel.app',
     siteName: 'Watchlistfy',
     title: 'Watchlistfy - AI-Powered Entertainment Tracker',
-    description: 'Track movies, TV shows, anime, and games with AI-powered recommendations',
+    description: 'Track movies, TV shows, anime, and games with AI-powered suggestions',
     images: [
       {
         url: '/static/images/twitter_banner.png',
@@ -59,7 +66,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Watchlistfy - AI-Powered Entertainment Tracker',
-    description: 'Track movies, TV shows, anime, and games with AI-powered recommendations',
+    description: 'Track movies, TV shows, anime, and games with AI-powered suggestions',
     images: ['/static/images/twitter_banner.png'],
   },
   robots: {

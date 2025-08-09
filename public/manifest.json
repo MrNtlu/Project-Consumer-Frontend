@@ -1,0 +1,43 @@
+{
+  "name": "Watchlistfy - AI-Powered Entertainment Tracker",
+  "short_name": "Watchlistfy",
+  "description": "Track movies, TV shows, anime, and games with AI-powered recommendations",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2196F3",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/static/images/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/static/images/logo_w_bg.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "entertainment",
+    "lifestyle"
+  ],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer",
+      "id": "com.mrntlu.projectconsumer"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748",
+      "id": "6476311748"
+    }
+  ]
+}

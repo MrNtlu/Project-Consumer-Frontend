@@ -43,7 +43,11 @@ export default function Pricing() {
                                 </p>
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
-                                    Occasional Ads
+                                    Banner Ads
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-green-500 flex-shrink-0" />
+                                    5 Reminders up to 3 months in advance
                                 </p>
                             </div>
 
@@ -105,6 +109,10 @@ export default function Pricing() {
                                 <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
                                     <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
                                     Advanced analytics
+                                </p>
+                                <p className="flex items-center text-gray-600 dark:text-gray-300 mb-3">
+                                    <BsCheck2Circle className="w-5 h-5 mr-3 text-[#2196F3] flex-shrink-0" />
+                                    50 Reminders up to 3 years in advance
                                 </p>
                             </div>
 

@@ -73,39 +73,44 @@ export default function MobileAppBanner() {
     }
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-60 bg-gradient-to-r from-[#2196F3] to-[#1976D2] text-white shadow-lg mobile-banner-visible">
-            <div className="flex items-center justify-between px-3 py-2 max-w-full">
-                {/* Left content */}
-                <div className="flex items-center space-x-2 flex-1 min-w-0">
-                    <div className="flex-shrink-0">
-                        <span className="text-lg">📱</span>
+        <div className="fixed h-20 sm:h-24 top-0 left-0 right-0 z-[9999] bg-gradient-to-r from-[#2196F3] to-[#1976D2] text-white shadow-lg mobile-banner-visible">
+            <div className="flex items-center justify-center h-full max-w-7xl mx-auto px-4 sm:px-6">
+                <div className="flex items-center justify-between w-full">
+                    {/* Left content */}
+                    <div className="flex items-center space-x-3 flex-1 min-w-0">
+                        <div className="flex-shrink-0">
+                            <span className="text-xl sm:text-2xl">📱</span>
+                        </div>
+                        <div className="flex-1 min-w-0">
+                            <p className="text-sm sm:text-base font-medium truncate">
+                                Get the full experience
+                            </p>
+                            <p className="text-xs sm:text-sm opacity-90 truncate">
+                                Download our mobile app
+                            </p>
+                        </div>
                     </div>
-                    <div className="flex-1 min-w-0">
-                        <p className="text-xs font-medium truncate">
-                            Get the full Watchlistfy experience
-                        </p>
-                    </div>
-                </div>
 
-                {/* Right buttons */}
-                <div className="flex items-center space-x-2 flex-shrink-0">
-                    <a
-                        href={getStoreLink()}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-1 bg-white bg-opacity-20 hover:bg-opacity-30 px-2 py-1 rounded text-xs font-medium transition-all duration-200"
-                    >
-                        {getStoreIcon()}
-                        <span className="hidden xs:inline">{getStoreText()}</span>
-                        <span className="xs:hidden">Get App</span>
-                    </a>
-                    <button
-                        onClick={handleDismiss}
-                        className="p-1 hover:bg-white hover:bg-opacity-20 rounded transition-colors duration-200 flex-shrink-0"
-                        aria-label="Dismiss banner"
-                    >
-                        <AiOutlineClose size={14} />
-                    </button>
+                    {/* Right buttons */}
+                    <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+                        <a
+                            href={getStoreLink()}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center space-x-1 sm:space-x-2 bg-white bg-opacity-20 hover:bg-opacity-30 px-3 py-2 sm:px-4 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all duration-200 shadow-sm"
+                        >
+                            {getStoreIcon()}
+                            <span className="hidden sm:inline">{getStoreText()}</span>
+                            <span className="sm:hidden">Get App</span>
+                        </a>
+                        <button
+                            onClick={handleDismiss}
+                            className="p-1.5 sm:p-2 hover:bg-white hover:bg-opacity-20 rounded-lg transition-colors duration-200 flex-shrink-0"
+                            aria-label="Dismiss banner"
+                        >
+                            <AiOutlineClose size={16} className="sm:w-4 sm:h-4" />
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

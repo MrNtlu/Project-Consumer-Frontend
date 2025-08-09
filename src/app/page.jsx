@@ -7,6 +7,7 @@ import Pricing from '../components/landing-page/pricing'
 import Features from '../components/landing-page/features'
 import Footer from '../components/landing-page/footer'
 import { FaRobot } from 'react-icons/fa6'
+import { BsGooglePlay, BsApple } from 'react-icons/bs'
 
 // Metadata moved to layout.jsx since this is now a Client Component
 
@@ -24,7 +25,7 @@ function GettingStarted() {
           </p>
         </div>
 
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap -m-4 mb-16">
           <div className="p-4 md:w-1/3">
             <div className="h-full bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
               <div className="w-16 h-16 inline-flex items-center justify-center rounded-full bg-[#2196F3] text-white text-2xl font-bold mb-6 mx-auto">
@@ -75,6 +76,28 @@ function GettingStarted() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="flex justify-center items-center flex-col sm:flex-row lg:flex-row md:flex-col gap-4 text-gray-600">
+          <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer" className="transform transition-transform hover:scale-105">
+            <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
+              <BsGooglePlay size={28} className="flex-shrink-0" />
+              <span className="ml-3 flex items-start flex-col leading-none min-w-0">
+                <span className="text-xs mb-1 text-gray-500 dark:text-gray-400 whitespace-nowrap">GET IT ON</span>
+                <span className="title-font font-medium text-base whitespace-nowrap">Google Play</span>
+              </span>
+            </button>
+          </a>
+
+          <a href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748" className="transform transition-transform hover:scale-105">
+            <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
+              <BsApple size={28} className="flex-shrink-0" />
+              <span className="ml-3 flex items-start flex-col leading-none min-w-0">
+                <span className="text-xs mb-1 text-gray-500 dark:text-gray-400 whitespace-nowrap">DOWNLOAD ON</span>
+                <span className="title-font font-medium text-base whitespace-nowrap">App Store</span>
+              </span>
+            </button>
+          </a>
         </div>
       </div>
     </section>

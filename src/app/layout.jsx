@@ -14,6 +14,7 @@ export const metadata = {
     template: '%s | Watchlistfy'
   },
   description: 'Track movies, TV shows, anime, and games with AI-powered recommendations. Get personalized suggestions and never miss your next favorite entertainment.',
+  // manifest: '/manifest.json',
   keywords: [
     'watchlist',
     'movie tracker',

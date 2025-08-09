@@ -12,7 +12,7 @@ export default function Hero() {
         <section id="home" className="text-gray-600 dark:text-gray-300 body-font min-h-screen w-full">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center min-h-screen">
                 <div className="h-full w-full flex justify-center items-center animate-fade-in-up">
-                    <Image className="object-contain mx-auto h-full max-h-[28rem] w-4/5 hover:scale-105 transition-transform duration-500 ease-in-out" alt="Watchlistfy App Screenshots" src="/static/images/combination.png" width={600} height={384} />
+                    <Image className="object-contain mx-auto h-full max-h-[38rem] w-4/5 hover:scale-105 transition-transform duration-500 ease-in-out" alt="Watchlistfy App Screenshots" src="/static/images/combination.png" width={703} height={450} />
                 </div>
                 <div className="lg:flex-grow md:w-1/2 lg:pl-12 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate-fade-in-right">
                     <div className="mb-6">

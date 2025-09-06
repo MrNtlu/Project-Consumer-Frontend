@@ -110,7 +110,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
-        <GettingStarted />
+        {/* <GettingStarted /> */}
         <Pricing />
         <Footer />
       </main>

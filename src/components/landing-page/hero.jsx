@@ -2,14 +2,20 @@
 
 import React from 'react'
 import Image from 'next/image'
-import { BsGooglePlay, BsApple } from 'react-icons/bs'
+import { BsGooglePlay, BsApple, BsChevronDown } from 'react-icons/bs'
 import { FaRobot } from 'react-icons/fa'
 import { MdMovieFilter, MdTv, MdGames, MdStar, MdDashboard, MdAnimation, MdWeb } from 'react-icons/md'
 import Link from 'next/link'
 
 export default function Hero() {
+    const scrollToFeatures = () => {
+        document.getElementById('features')?.scrollIntoView({
+            behavior: 'smooth'
+        });
+    };
+
     return (
-        <section id="home" className="text-gray-600 dark:text-gray-300 body-font min-h-screen w-full">
+        <section id="home" className="text-gray-600 dark:text-gray-300 body-font min-h-screen w-full relative">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center min-h-screen">
                 <div className="h-full w-full flex justify-center items-center animate-fade-in-up">
                     <Image className="object-contain mx-auto h-full max-h-[38rem] w-4/5 hover:scale-105 transition-transform duration-500 ease-in-out" alt="Watchlistfy App Screenshots" src="/static/images/combination.png" width={703} height={450} />
@@ -76,6 +82,24 @@ export default function Hero() {
                         *Not a streaming service - We&apos;re your personal entertainment tracker
                     </p>
                 </div>
+            </div>
+
+            {/* Scroll Down Indicator - Positioned below all content */}
+            <div className="w-full flex justify-center pb-8 pt-4">
+                <button
+                    onClick={scrollToFeatures}
+                    className="flex flex-col items-center text-gray-500 dark:text-gray-400 hover:text-[#2196F3] dark:hover:text-[#2196F3] transition-colors duration-300 group cursor-pointer animate-fade-in-up"
+                    aria-label="Scroll to features"
+                    style={{ animationDelay: '1s' }}
+                >
+                    <span className="text-sm font-medium mb-2 opacity-80 group-hover:opacity-100 text-center">
+                        Explore Features
+                    </span>
+                    <BsChevronDown
+                        size={24}
+                        className="animate-bounce group-hover:animate-pulse"
+                    />
+                </button>
             </div>
         </section>
     )

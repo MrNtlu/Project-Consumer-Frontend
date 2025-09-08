@@ -12,7 +12,7 @@ export default function Pricing() {
                         Choose Your <span className="text-blue-500">Watchlistfy</span> Experience
                     </h1>
                     <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-                        Start free and upgrade when you're ready for more AI power and unlimited tracking.
+                        Start free and upgrade when you&apos;re ready for more AI power and unlimited tracking.
                     </p>
                 </div>
 

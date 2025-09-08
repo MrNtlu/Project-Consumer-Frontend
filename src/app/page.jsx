@@ -48,7 +48,7 @@ function HeroWithFeatures() {
     <main id="home" className="container mx-auto px-6 py-12">
       <section className="text-center">
         <h1 className="text-5xl font-bold text-sky-500">
-          <span className="text-[#2196F3] bg-gradient-to-r from-[#2196F3] to-blue-600 bg-clip-text text-transparent animate-pulse">Tired of "What to Watch?"</span>
+          <span className="text-[#2196F3] bg-gradient-to-r from-[#2196F3] to-blue-600 bg-clip-text text-transparent animate-pulse">Tired of &ldquo;What to Watch?&rdquo;</span>
         </h1>
         <p className="mt-4 text-xl text-gray-600">Watchlistfy is your ultimate guide to the world of entertainment.</p>
       </section>
@@ -72,10 +72,12 @@ function HeroWithFeatures() {
 
         {/* Center Image */}
         <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/2 flex justify-center items-center">
-          <img
+          <Image
             alt="Mobile app interface screenshots"
             className="w-full max-w-xs md:max-w-md lg:max-w-lg"
             src="/static/images/combination.png"
+            width={500}
+            height={600}
           />
         </div>
 
@@ -91,7 +93,7 @@ function HeroWithFeatures() {
           </div>
           <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.8s_forwards,subtleBob_5s_ease-in-out_2.6s_infinite]">
             <h3 className="font-bold text-lg text-[#2196F3]">Reminders</h3>
-            <p className="mt-2 text-sm text-gray-600">Set reminders so you don't miss when it's released!</p>
+            <p className="mt-2 text-sm text-gray-600">Set reminders so you don&apos;t miss when it&apos;s released!</p>
           </div>
         </div>
 
@@ -119,7 +121,7 @@ function HeroWithFeatures() {
           </div>
           <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.8s_forwards,subtleBob_5s_ease-in-out_2.6s_infinite]">
             <h3 className="font-bold text-lg text-[#2196F3]">Reminders</h3>
-            <p className="mt-2 text-sm text-gray-600">Set reminders so you don't miss when it's released!</p>
+            <p className="mt-2 text-sm text-gray-600">Set reminders so you don&apos;t miss when it&apos;s released!</p>
           </div>
         </div>
       </section>
@@ -135,7 +137,7 @@ function HeroWithFeatures() {
       </section>
 
       <footer className="text-center mt-8">
-        <p className="text-xs text-gray-500">*Not a streaming service - We're your personal entertainment tracker.</p>
+        <p className="text-xs text-gray-500">*Not a streaming service - We&apos;re your personal entertainment tracker.</p>
       </footer>
 
       <style jsx>{`

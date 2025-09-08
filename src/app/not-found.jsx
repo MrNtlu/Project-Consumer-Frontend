@@ -17,7 +17,7 @@ export default function Custom404() {
                         </span>
                     </button>
                 </a>
-                <a href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748">
+                <a className="ml-4" href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748">
                     <button className="bg-blue-500 inline-flex mt-8 py-3 px-5 rounded-lg items-center hover:bg-blue-700 focus:outline-none">
                         <SiAppstore size={25} color={"white"} />
                         <span className="ml-4 flex items-start flex-col leading-none">

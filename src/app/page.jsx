@@ -2,118 +2,173 @@
 
 export const dynamic = "force-dynamic";
 
-import Hero from '../components/landing-page/hero'
 import Pricing from '../components/landing-page/pricing'
-import Features from '../components/landing-page/features'
 import Footer from '../components/landing-page/footer'
-import { FaRobot } from 'react-icons/fa6'
-import { BsGooglePlay, BsApple } from 'react-icons/bs'
+import Screenshots from '../components/landing-page/screenshots'
+import { BsApple } from 'react-icons/bs'
+import Image from 'next/image'
 
-// Metadata moved to layout.jsx since this is now a Client Component
 
-// Getting Started Component
-function GettingStarted() {
+function GooglePlayButton({ href, className = "" }) {
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
-      <div className="container mx-auto px-5">
-        <div className="text-center mb-16">
-          <h2 className="sm:text-4xl text-3xl font-bold title-font text-gray-900 dark:text-white mb-4">
-            Get Started in <span className="text-[#2196F3]">3 Simple Steps</span>
-          </h2>
-          <p className="text-lg leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-600 dark:text-gray-300">
-            Transform your entertainment tracking experience in minutes
-          </p>
-        </div>
-
-        <div className="flex flex-wrap -m-4 mb-16">
-          <div className="p-4 md:w-1/3">
-            <div className="h-full bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
-              <div className="w-16 h-16 inline-flex items-center justify-center rounded-full bg-[#2196F3] text-white text-2xl font-bold mb-6 mx-auto">
-                1
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                Download & Sign Up
-              </h3>
-              <p className="leading-relaxed text-gray-600 dark:text-gray-300 mb-6">
-                Get Watchlistfy free from Google Play or App Store. Create your account in seconds.
-              </p>
-              <div className="text-sm text-[#2196F3] font-medium">
-                Free to download
-              </div>
-            </div>
-          </div>
-
-          <div className="p-4 md:w-1/3">
-            <div className="h-full bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
-              <div className="w-16 h-16 inline-flex items-center justify-center rounded-full bg-green-500 text-white text-2xl font-bold mb-6 mx-auto">
-                2
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                Import Your Collections
-              </h3>
-              <p className="leading-relaxed text-gray-600 dark:text-gray-300 mb-6">
-                Import from MyAnimeList, Steam, TMDB, AniList and Trakt.tv to instantly import your existing lists.
-              </p>
-              <div className="text-sm text-green-500 font-medium">
-                Keep Your History
-              </div>
-            </div>
-          </div>
-
-          <div className="p-4 md:w-1/3">
-            <div className="h-full bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg text-center">
-              <div className="w-16 h-16 inline-flex items-center justify-center rounded-full bg-purple-500 text-white text-2xl font-bold mb-6 mx-auto">
-                3
-              </div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
-                Rate & Discover
-              </h3>
-              <p className="leading-relaxed text-gray-600 dark:text-gray-300 mb-6">
-                Rate and add your content and let our AI discover your next favorite movie, show, anime, or game.
-              </p>
-              <div className="text-sm text-purple-500 font-medium">
-                AI-Powered Discovery
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex justify-center items-center flex-col sm:flex-row lg:flex-row md:flex-col gap-4 text-gray-600">
-          <a href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer" className="transform transition-transform hover:scale-105">
-            <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
-              <BsGooglePlay size={28} className="flex-shrink-0" />
-              <span className="ml-3 flex items-start flex-col leading-none min-w-0">
-                <span className="text-xs mb-1 text-gray-500 dark:text-gray-400 whitespace-nowrap">GET IT ON</span>
-                <span className="title-font font-medium text-base whitespace-nowrap">Google Play</span>
-              </span>
-            </button>
-          </a>
-
-          <a href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748" className="transform transition-transform hover:scale-105">
-            <button className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 text-gray-800 dark:text-gray-100 inline-flex py-4 px-6 rounded-xl items-center focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-[#2196F3] dark:hover:text-[#2196F3] shadow-lg hover:shadow-xl transition-all duration-300 min-w-0 w-full sm:w-auto">
-              <BsApple size={28} className="flex-shrink-0" />
-              <span className="ml-3 flex items-start flex-col leading-none min-w-0">
-                <span className="text-xs mb-1 text-gray-500 dark:text-gray-400 whitespace-nowrap">DOWNLOAD ON</span>
-                <span className="title-font font-medium text-base whitespace-nowrap">App Store</span>
-              </span>
-            </button>
-          </a>
+    <a href={href} className={`${className} transform transition-all duration-300 hover:scale-105`} aria-label="Download Watchlistfy on Google Play">
+      <div className="bg-[#070705] hover:bg-gray-800 text-white rounded-lg px-6 py-3 flex items-center gap-3 transition-all duration-300 w-[200px] h-[64px] shadow-lg hover:shadow-xl border border-gray-600">
+        <Image
+          src="/static/images/play-icon.svg"
+          alt="Google Play"
+          width={32}
+          height={32}
+          className="flex-shrink-0"
+        />
+        <div className="flex flex-col justify-center leading-tight">
+          <span className="text-xs font-semibold opacity-95">GET IT ON</span>
+          <span className="text-lg font-bold -mt-1">Google Play</span>
         </div>
       </div>
-    </section>
+    </a>
+  )
+}
+
+function AppStoreButton({ href, className = "" }) {
+  return (
+    <a href={href} className={`${className} transform transition-all duration-300 hover:scale-105`} aria-label="Download Watchlistfy on the App Store">
+      <div className="bg-[#070705] hover:bg-gray-800 text-white rounded-lg px-6 py-3 flex items-center gap-3 transition-all duration-300 w-[200px] h-[64px] shadow-lg hover:shadow-xl border border-gray-600">
+        <BsApple size={28} className="text-white flex-shrink-0" />
+        <div className="flex flex-col justify-center leading-tight">
+          <span className="text-xs font-semibold opacity-95">Download on the</span>
+          <span className="text-lg font-bold -mt-1">App Store</span>
+        </div>
+      </div>
+    </a>
+  )
+}
+
+function HeroWithFeatures() {
+  return (
+    <main id="home" className="container mx-auto px-6 py-12">
+      <section className="text-center">
+        <h1 className="text-5xl font-bold text-sky-500">
+          <span className="text-[#2196F3] bg-gradient-to-r from-[#2196F3] to-blue-600 bg-clip-text text-transparent animate-pulse">Tired of "What to Watch?"</span>
+        </h1>
+        <p className="mt-4 text-xl text-gray-600">Watchlistfy is your ultimate guide to the world of entertainment.</p>
+      </section>
+
+      <section className="mt-8 flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-8">
+        {/* Left Features - Desktop only */}
+        <div className="hidden lg:flex w-1/4 flex-col justify-center items-center gap-6">
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards,subtleBob_5s_ease-in-out_0.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Everything in One Place</h3>
+            <p className="mt-2 text-sm text-black">Movies, TV Shows, Anime, Games in one app. Single app to track your entertainment.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards,subtleBob_5s_ease-in-out_1.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Track & Log</h3>
+            <p className="mt-2 text-sm text-black">Track & log episodes and seasons, keep organized, track how many times you finished.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.8s_forwards,subtleBob_5s_ease-in-out_2.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Streaming Guide</h3>
+            <p className="mt-2 text-sm text-black">Find where to stream, buy or rent like Netflix, Disney+, Steam, Crunchyroll and more.</p>
+          </div>
+        </div>
+
+        {/* Center Image */}
+        <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/2 flex justify-center items-center">
+          <img
+            alt="Mobile app interface screenshots"
+            className="w-full max-w-xs md:max-w-md lg:max-w-lg"
+            src="/static/images/combination.png"
+          />
+        </div>
+
+        {/* Right Features - Desktop only */}
+        <div className="hidden lg:flex w-1/4 flex-col justify-center items-center gap-6">
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards,subtleBob_5s_ease-in-out_0.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">AI Suggestions</h3>
+            <p className="mt-2 text-sm text-gray-600">Get suggestions based on your history. Our AI will suggest you what to watch/play next.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards,subtleBob_5s_ease-in-out_1.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Your Lists</h3>
+            <p className="mt-2 text-sm text-gray-600">Create your own curated and todo lists to watch with your friends later.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg w-full flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.8s_forwards,subtleBob_5s_ease-in-out_2.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Reminders</h3>
+            <p className="mt-2 text-sm text-gray-600">Set reminders so you don't miss when it's released!</p>
+          </div>
+        </div>
+
+        {/* All Features Grid - Mobile/Tablet only */}
+        <div className="lg:hidden w-full grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-4xl mx-auto">
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards,subtleBob_5s_ease-in-out_0.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Everything in One Place</h3>
+            <p className="mt-2 text-sm text-gray-600">Movies, TV Shows, Anime, Games in one app. Single app to track your entertainment.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards,subtleBob_5s_ease-in-out_1.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Track & Log</h3>
+            <p className="mt-2 text-sm text-gray-600">Track & log episodes and seasons, keep organized, track how many times you finished.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.8s_forwards,subtleBob_5s_ease-in-out_2.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Streaming Guide</h3>
+            <p className="mt-2 text-sm text-gray-600">Find where to stream, buy or rent like Netflix, Disney+, Steam, Crunchyroll and more.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.4s_forwards,subtleBob_5s_ease-in-out_0.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">AI Suggestions</h3>
+            <p className="mt-2 text-sm text-gray-600">Get suggestions based on your history. Our AI will suggest you what to watch/play next.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards,subtleBob_5s_ease-in-out_1.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Your Lists</h3>
+            <p className="mt-2 text-sm text-gray-600">Create your own curated and todo lists to watch with your friends later.</p>
+          </div>
+          <div className="bg-gray-200/40 border border-black/10 p-4 rounded-lg flex flex-col transition-all duration-300 hover:scale-105 hover:shadow-lg opacity-0 animate-[fadeIn_1s_ease-out_0.8s_forwards,subtleBob_5s_ease-in-out_2.6s_infinite]">
+            <h3 className="font-bold text-lg text-[#2196F3]">Reminders</h3>
+            <p className="mt-2 text-sm text-gray-600">Set reminders so you don't miss when it's released!</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="mt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 relative">
+        <GooglePlayButton
+          href="https://play.google.com/store/apps/details?id=com.mrntlu.projectconsumer"
+        />
+        <AppStoreButton
+          href="https://apps.apple.com/us/app/watchlistfy-ai-tracker/id6476311748"
+        />
+      </section>
+
+      <footer className="text-center mt-8">
+        <p className="text-xs text-gray-500">*Not a streaming service - We're your personal entertainment tracker.</p>
+      </footer>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        @keyframes subtleBob {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-5px);
+          }
+        }
+      `}</style>
+    </main>
   )
 }
 
 export default function Home() {
   return (
-    <div>
-      <main>
-        <Hero />
-        <Features />
-        {/* <GettingStarted /> */}
-        <Pricing />
-        <Footer />
-      </main>
+    <div className="min-h-screen bg-white text-gray-800" style={{scrollBehavior: 'smooth'}}>
+      <HeroWithFeatures />
+      <Screenshots />
+      <Pricing />
+      <Footer />
     </div>
   );
 }

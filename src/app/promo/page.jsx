@@ -6,9 +6,9 @@ import Pricing from '../../components/landing-page/features'
 export default function AppsPage() {
   return (
     <div>
-        <Hero />
-        <Features />
-        <Pricing />
+      <Hero />
+      <Features />
+      <Pricing />
     </div>
   )
 }

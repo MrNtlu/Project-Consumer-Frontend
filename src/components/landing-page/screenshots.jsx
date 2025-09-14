@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useRef, useState, useEffect } from 'react'
+import React, { useRef, useState, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md'
 
@@ -20,15 +20,15 @@ export default function Screenshots() {
         'Apple iPhone 16 Pro Max Screenshot 10.png'
     ]
 
-    const updateScrollButtons = () => {
+    const updateScrollButtons = useCallback(() => {
         if (scrollContainerRef.current) {
             const { scrollLeft, scrollWidth, clientWidth } = scrollContainerRef.current
             setCanScrollLeft(scrollLeft > 0)
             setCanScrollRight(scrollLeft < scrollWidth - clientWidth)
         }
-    }
+    }, [])
 
-    const scroll = (direction) => {
+    const scroll = useCallback((direction) => {
         if (scrollContainerRef.current) {
             const scrollAmount = 300
             scrollContainerRef.current.scrollBy({
@@ -36,7 +36,7 @@ export default function Screenshots() {
                 behavior: 'smooth'
             })
         }
-    }
+    }, [])
 
     useEffect(() => {
         const container = scrollContainerRef.current
@@ -50,7 +50,7 @@ export default function Screenshots() {
                 window.removeEventListener('resize', updateScrollButtons)
             }
         }
-    }, [])
+    }, [updateScrollButtons])
 
     return (
         <section id="screenshots" className="py-12 bg-gray-50">
@@ -81,6 +81,9 @@ export default function Screenshots() {
                                             fill
                                             className="object-contain"
                                             sizes="250px"
+                                            loading={index < 2 ? "eager" : "lazy"}
+                                            placeholder="blur"
+                                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
                                         />
                                     </div>
                                 </div>

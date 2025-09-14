@@ -1,0 +1,43 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtleBob {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.fadeInAnimation {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.fadeInDelayed1 {
+  animation: fadeIn 1s ease-out 0.4s forwards, subtleBob 5s ease-in-out 0.6s infinite;
+  opacity: 0;
+}
+
+.fadeInDelayed2 {
+  animation: fadeIn 1s ease-out 0.6s forwards, subtleBob 5s ease-in-out 1.6s infinite;
+  opacity: 0;
+}
+
+.fadeInDelayed3 {
+  animation: fadeIn 1s ease-out 0.8s forwards, subtleBob 5s ease-in-out 2.6s infinite;
+  opacity: 0;
+}
+
+.featureCard {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}

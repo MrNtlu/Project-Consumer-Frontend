@@ -38,10 +38,6 @@ export default function Pricing() {
                                 <BsCheck2Circle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0" />
                                 Basic import features
                             </li>
-                            <li className="flex items-center">
-                                <BsCheck2Circle className="text-green-500 mr-3 w-5 h-5 flex-shrink-0" />
-                                Banner Ads
-                            </li>
                         </ul>
                         <div className="mt-auto pt-8">
                             <button className="w-full bg-gray-200 text-gray-800 font-semibold py-3 rounded-lg hover:bg-gray-300 transition-colors">
@@ -76,10 +72,6 @@ export default function Pricing() {
                             <li className="flex items-center">
                                 <BsCheck2Circle className="text-blue-500 mr-3 w-5 h-5 flex-shrink-0" />
                                 Unlimited tracking &amp; lists
-                            </li>
-                            <li className="flex items-center">
-                                <BsCheck2Circle className="text-blue-500 mr-3 w-5 h-5 flex-shrink-0" />
-                                Ad free experience
                             </li>
                         </ul>
                         <div className="mt-auto pt-8">

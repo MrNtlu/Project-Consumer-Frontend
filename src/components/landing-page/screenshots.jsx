@@ -8,16 +8,19 @@ export default function Screenshots() {
     const scrollContainerRef = useRef(null)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(true)
-    
+
     const screenshots = [
-        'Apple iPhone 16 Pro Max Screenshot 1.png',
-        'Apple iPhone 16 Pro Max Screenshot 2.png',
-        'Apple iPhone 16 Pro Max Screenshot 3.png',
-        'Apple iPhone 16 Pro Max Screenshot 4.png',
-        'Apple iPhone 16 Pro Max Screenshot 5.png',
-        'Apple iPhone 16 Pro Max Screenshot 6.png',
-        'Apple iPhone 16 Pro Max Screenshot 7.png',
-        'Apple iPhone 16 Pro Max Screenshot 10.png'
+        'ss1.png',
+        'ss2.png',
+        'ss3.png',
+        'ss4.png',
+        'ss5.png',
+        'ss6.png',
+        'ss7.png',
+        'ss8.png',
+        'ss9.png',
+        'ss10.png',
+        'ss11.png',
     ]
 
     const updateScrollButtons = useCallback(() => {
@@ -44,7 +47,7 @@ export default function Screenshots() {
             updateScrollButtons()
             container.addEventListener('scroll', updateScrollButtons)
             window.addEventListener('resize', updateScrollButtons)
-            
+
             return () => {
                 container.removeEventListener('scroll', updateScrollButtons)
                 window.removeEventListener('resize', updateScrollButtons)
@@ -61,20 +64,20 @@ export default function Screenshots() {
                     </h2>
                     <p className="mt-4 text-xl text-gray-600">Experience the beautiful interface that makes tracking entertainment effortless</p>
                 </div>
-                
+
                 <div className="relative">
-                    <div 
+                    <div
                         ref={scrollContainerRef}
                         className="flex overflow-x-auto gap-6 pb-6 scrollbar-hide"
                     >
-                        <div className="flex gap-6" style={{width: 'max-content'}}>
+                        <div className="flex gap-6" style={{ width: 'max-content' }}>
                             {screenshots.map((screenshot, index) => (
-                                <div 
-                                    key={index} 
+                                <div
+                                    key={index}
                                     className="flex-shrink-0 bg-white rounded-xl shadow-lg p-4 transition-all duration-300 hover:scale-105 hover:shadow-xl"
-                                    style={{width: '250px'}}
+                                    style={{ width: '250px' }}
                                 >
-                                    <div className="relative w-full rounded-lg overflow-hidden" style={{height: '540px'}}>
+                                    <div className="relative w-full rounded-lg overflow-hidden" style={{ height: '540px' }}>
                                         <Image
                                             src={`/static/images/screenshots/${screenshot}`}
                                             alt={`Watchlistfy App Screenshot ${index + 1}`}
@@ -90,9 +93,9 @@ export default function Screenshots() {
                             ))}
                         </div>
                     </div>
-                    
+
                     {canScrollLeft && (
-                        <button 
+                        <button
                             onClick={() => scroll('left')}
                             className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-700 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
                             aria-label="Scroll left"
@@ -100,9 +103,9 @@ export default function Screenshots() {
                             <MdChevronLeft size={24} />
                         </button>
                     )}
-                    
+
                     {canScrollRight && (
-                        <button 
+                        <button
                             onClick={() => scroll('right')}
                             className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-700 rounded-full p-3 shadow-lg transition-all duration-300 hover:scale-110 z-10"
                             aria-label="Scroll right"
@@ -110,7 +113,7 @@ export default function Screenshots() {
                             <MdChevronRight size={24} />
                         </button>
                     )}
-                    
+
                     {canScrollLeft && (
                         <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-gray-50 to-transparent pointer-events-none"></div>
                     )}
@@ -118,12 +121,12 @@ export default function Screenshots() {
                         <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-gray-50 to-transparent pointer-events-none"></div>
                     )}
                 </div>
-                
+
                 <div className="text-center mt-8">
                     <p className="text-sm text-gray-500">Use the arrow buttons or scroll horizontally to see more screenshots</p>
                 </div>
             </div>
-            
+
             <style jsx>{`
                 .scrollbar-hide {
                     -ms-overflow-style: none;
